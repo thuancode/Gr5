@@ -19,6 +19,7 @@ class PlantAdapter(var context: Context, private var listPlant:List<Species>): B
         var textFamily: TextView
         var textDescription: TextView
 
+
         init {
             imagePlant = row.findViewById(R.id.imagePlant) as ImageView
             textPlant = row.findViewById(R.id.text_plant) as TextView
