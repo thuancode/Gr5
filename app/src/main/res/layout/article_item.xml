@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroud_search"
+    android:padding="22dp">
+
+    <ImageView
+        android:id="@+id/ivArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/imagearticle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvArticleContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:paddingStart="10dp"
+        android:text="@string/article_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#36455A"
+        app:layout_constraintEnd_toEndOf="@+id/ivArticle"
+        app:layout_constraintStart_toStartOf="@+id/ivArticle"
+        app:layout_constraintTop_toBottomOf="@+id/ivArticle" />
+
+    <ImageView
+        android:id="@+id/ivUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/image_use"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvArticleContent"
+        app:layout_constraintTop_toBottomOf="@+id/tvArticleContent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Shivani Vora"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/ivUser"
+        app:layout_constraintTop_toTopOf="@+id/ivUser" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="2023. 03. 23"
+        android:textColor="#A1A8B9"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivUser"
+        app:layout_constraintStart_toEndOf="@+id/ivUser" />
+
+    <ImageView
+        android:id="@+id/ivHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvArticleContent"
+        app:layout_constraintTop_toBottomOf="@+id/tvArticleContent" />
+
+    <ImageView
+        android:id="@+id/ivBookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/ic_bookmark"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHeart"
+        app:layout_constraintEnd_toStartOf="@+id/ivHeart"
+        app:layout_constraintTop_toTopOf="@+id/ivHeart" />
+</androidx.constraintlayout.widget.ConstraintLayout>

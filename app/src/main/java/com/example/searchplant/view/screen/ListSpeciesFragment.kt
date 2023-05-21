@@ -59,7 +59,7 @@ class ListSpeciesFragment : Fragment() {
     }
 
     private fun getDataPlant(key:String){
-        var list: ArrayList<Species> = ArrayList()
+        val list: ArrayList<Species> = ArrayList()
         db = FirebaseFirestore.getInstance()
         db.collection("SPECIES")
             .get()

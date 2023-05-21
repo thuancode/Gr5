@@ -2,7 +2,8 @@ package com.example.searchplant.model
 
 import com.google.firebase.firestore.auth.User
 
-data class Species(private var namePlant:String ?= null,
+data class Species(private var postID:String ?= null,
+                   private var namePlant:String ?= null,
                    private var species: String?= null,
                    private var kingdom:String ?= null,
                    private var Family:String ?= null,
@@ -18,7 +19,6 @@ data class Species(private var namePlant:String ?= null,
 
     fun setNamePlant(namePlant1: String) {
         this.namePlant = namePlant1
-
     }
 
     fun getSpecies(): String? {

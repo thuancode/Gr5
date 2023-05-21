@@ -28,7 +28,9 @@ class HomeFragment : Fragment() {
         binding.btnSpe.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_speciesFragment)
         }
-
+        binding.btnArt.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_articlesFragment)
+        }
         binding.bottomNavigationView.setOnNavigationItemReselectedListener{
             when(it.itemId) {
                 R.id.home -> {
