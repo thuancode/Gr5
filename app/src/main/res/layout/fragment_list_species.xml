@@ -73,8 +73,6 @@
                 app:layout_constraintVertical_bias="0.796"
                 tools:ignore="HardcodedText,RtlSymmetry" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
         <ScrollView
             android:id="@+id/scrollview1"
             android:layout_width="match_parent"
@@ -96,9 +94,6 @@
                 tools:ignore="NestedScrolling"
                 tools:listitem="@layout/plant_item" />
         </ScrollView>
-
-
-
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:id="@+id/coordinatorLayout"
             android:layout_width="match_parent"

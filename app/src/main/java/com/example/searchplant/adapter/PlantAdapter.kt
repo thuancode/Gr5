@@ -25,8 +25,6 @@ class PlantAdapter(var context: Context, private var listPlant:List<Species>): B
             textKingDom = row.findViewById(R.id.text_kingdom) as TextView
             textFamily = row.findViewById(R.id.text_family) as TextView
             textDescription = row.findViewById(R.id.text_descreiption) as TextView
-
-
         }
     }
     override fun getCount(): Int {

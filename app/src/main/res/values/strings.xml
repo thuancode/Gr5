@@ -22,4 +22,7 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="sign_up">SIGN UP</string>
+    <string name="article_content">David Austin, Who Breathed Life Into
+the Rose, Is Dead at 92</string>
+    <string name="dothing">TODO</string>
 </resources>

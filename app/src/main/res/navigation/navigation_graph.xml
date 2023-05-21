@@ -75,6 +75,9 @@
         <action
             android:id="@+id/action_homeFragment_to_speciesFragment"
             app:destination="@id/speciesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment" />
     </fragment>
     <fragment
         android:id="@+id/speciesFragment"
@@ -104,6 +107,36 @@
             android:id="@+id/action_listSpeciesFragment_to_homeFragment"
             app:destination="@id/homeFragment"
             app:popUpTo="@id/listSpeciesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:name="com.example.searchplant.view.screen.ArticlesFragment"
+        android:label="ArticlesFragment"
+        tools:layout="@layout/fragment_species">
+        <action
+            android:id="@+id/action_articlesFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/articlesFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_articlesFragment_to_detailArticlesFragment"
+            app:destination="@id/detailArticlesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailArticlesFragment"
+        android:name="com.example.searchplant.view.screen.DetailArticlesFragment"
+        android:label="DetailArticlesFragment"
+        tools:layout="@layout/fragment_detail_articles">
+        <action
+            android:id="@+id/action_detailArticlesFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/detailArticlesFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_detailArticlesFragment_to_articlesFragment"
+            app:destination="@id/articlesFragment"
+            app:popUpTo="@id/detailArticlesFragment"
             app:popUpToInclusive="true" />
     </fragment>
 
